@@ -81,11 +81,7 @@ class Model(object):
             h = next(reader)
             R = []
             for r in reader:
-                r = r[1:]
-                d = {}
-                for i, c in enumerate(h[1:]):
-                    d[c.lower()] = Float(r[i])
-                R += [d]
+                R += [{"probability": Float(r[1])}]
         meta = None
         result = {
             'result': R,
