@@ -25,6 +25,7 @@ def load_model(framework_dir, checkpoints_dir):
 class Model(object):
     def __init__(self):
         self.DATA_FILE = "data.csv"
+        self.FEAT_FILE = "feat.csv"
         self.PRED_FILE = "pred.csv"
         self.RUN_FILE = "run.sh"
         self.LOG_FILE = "run.log"
@@ -42,6 +43,7 @@ class Model(object):
     def predict(self, smiles_list):
         tmp_folder = tempfile.mkdtemp()
         data_file = os.path.join(tmp_folder, self.DATA_FILE)
+        feat_file = os.path.join(tmp_folder, self.FEAT_FILE)
         pred_file = os.path.join(tmp_folder, self.PRED_FILE)
         log_file = os.path.join(tmp_folder, self.LOG_FILE)
         with open(data_file, "w") as f:
@@ -51,11 +53,15 @@ class Model(object):
         run_file = os.path.join(tmp_folder, self.RUN_FILE)
         with open(run_file, "w") as f:
             lines = [
-                "python {0}/run_cddd.py -i {1} -o {2} --smiles_header 'smiles' --model_dir {3}/default_model/".format(
+                "python {0}/calculate_descriptors.py {1} {2}".format(
                     self.framework_dir,
                     data_file,
-                    pred_file,
-                    self.checkpoints_dir
+                    feat_file
+                ),
+                "perl {0}/mycpermcheck1.1 -i {1} > {2}".format(
+                    self.framework_dir,
+                    feat_file,
+                    pred_file
                 )
             ]
             f.write(os.linesep.join(lines))
@@ -69,10 +75,12 @@ class Model(object):
             h = next(reader)
             R = []
             for r in reader:
-                R += [{"embedding": [float(x) for x in r]}]
-        meta = {
-            "embedding": h
-        }
+                r = r[1:]
+                d = {}
+                for i, c in enumerate(h[1:]):
+                    d[c] = r[i]
+                R += [d]
+        meta = None
         result = {
             'result': R,
             'meta': meta
