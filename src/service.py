@@ -22,6 +22,12 @@ def load_model(framework_dir, checkpoints_dir):
     return mdl
 
 
+def Float(x):
+    try:
+        return float(x)
+    except:
+        return None
+
 class Model(object):
     def __init__(self):
         self.DATA_FILE = "data.csv"
@@ -78,7 +84,7 @@ class Model(object):
                 r = r[1:]
                 d = {}
                 for i, c in enumerate(h[1:]):
-                    d[c] = r[i]
+                    d[c.lower()] = Float(r[i])
                 R += [d]
         meta = None
         result = {
