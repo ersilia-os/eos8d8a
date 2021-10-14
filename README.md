@@ -1,2 +1,2 @@
-# eos-template
-Template repository to add new models to the Ersilia Model Hub
+# eos8d8a
+Mycobacterium tuberculosis membrane permeability prediction
