@@ -82,12 +82,7 @@ class Model(object):
             R = []
             for r in reader:
                 R += [{"probability": Float(r[1])}]
-        meta = None
-        result = {
-            'result': R,
-            'meta': meta
-        }
-        return result
+        return R
 
 
 class Artifact(BentoServiceArtifact):
