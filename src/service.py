@@ -32,6 +32,7 @@ class Model(object):
     def __init__(self):
         self.DATA_FILE = "data.csv"
         self.FEAT_FILE = "feat.csv"
+        self.PRED_UNSORT_FILE = "pred_intermediate.csv"
         self.PRED_FILE = "pred.csv"
         self.RUN_FILE = "run.sh"
         self.LOG_FILE = "run.log"
@@ -50,6 +51,7 @@ class Model(object):
         tmp_folder = tempfile.mkdtemp()
         data_file = os.path.join(tmp_folder, self.DATA_FILE)
         feat_file = os.path.join(tmp_folder, self.FEAT_FILE)
+        pred_unsorted_file = os.path.join(tmp_folder, self.PRED_UNSORT_FILE)
         pred_file = os.path.join(tmp_folder, self.PRED_FILE)
         log_file = os.path.join(tmp_folder, self.LOG_FILE)
         with open(data_file, "w") as f:
@@ -67,6 +69,12 @@ class Model(object):
                 "perl {0}/mycpermcheck1.1 -i {1} > {2}".format(
                     self.framework_dir,
                     feat_file,
+                    pred_unsorted_file
+                ),
+                "python {0}/reorder_predictions.py {1} {2} {3}".format(
+                    self.framework_dir,
+                    feat_file,
+                    pred_unsorted_file,
                     pred_file
                 )
             ]
@@ -81,7 +89,7 @@ class Model(object):
             h = next(reader)
             R = []
             for r in reader:
-                R += [{"probability": Float(r[1])}]
+                R += [{"probability": Float(r[0])}]
         return R
 
 
