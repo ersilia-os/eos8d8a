@@ -1,25 +1,41 @@
-# Mycobacterium tuberculosis membrane permeability prediction
+# Membrane permeability in Mycobacterium tuberculosis
 
-## Model Identifiers
-- Slug: mycpermcheck
-- Ersilia ID: eos8d8a
-- Tags: MTB	physchem	permeability
+MycPermCheck predicts potential to permeate the Mycobacterium tuberculosis cell membrane based on physicochemical properties.
+Due to the lack of reliable experimental datapoints, the authors defined the training set using molecules that are active against M.tb (MIC < 10 uM) (therefore, permeable) and have a molecular weight of <500 Dalton
 
-## Model Description 
-MycPermCheck predicts potential to permeate the Mycobacterium tuberculosis cell membrane based on physicochemical properties 
-- Input: SMILES 
-- Output: FOSA, accptHB, PISA, logP, glob 
-- Model type: Regression
-- Mode of training: Pretrained
-- Training data: <10M compounds 
-- Experikmentally validated: No 
+## Identifiers
 
-## Source code
-This model is published by Benjamin Merget, David Zilian, Tobias Müller, Christoph A. Sotriffer. MycPermCheck: the Mycobacterium tuberculosis permeability prediction tool for small molecules. *Bioinformatics*, January 2013, DOI: https://doi.org/10.1093/bioinformatics/bts641
-- Code: https://www.mycpermcheck.aksotriffer.pharmazie.uni-wuerzburg.de/index.html
+* EOS model ID: `eos8d8a`
+* Slug: `mycpermcheck`
+
+## Characteristics
+
+* Input: `Compound`
+* Input Shape: `Single`
+* Task: `Classification`
+* Output: `Probability`
+* Output Type: `Float`
+* Output Shape: `Single`
+* Interpretation: Probability of permeability across the M.tb cell wall
+
+## References
+
+* [Publication](https://academic.oup.com/bioinformatics/article/29/1/62/272745)
+* [Source Code](https://www.mycpermcheck.aksotriffer.pharmazie.uni-wuerzburg.de/index.html)
+* Ersilia contributor: [miquelduranfrigola](https://github.com/miquelduranfrigola)
+
+## Citation
+
+If you use this model, please cite the [original authors](https://academic.oup.com/bioinformatics/article/29/1/62/272745) of the model and the [Ersilia Model Hub](https://github.com/ersilia-os/ersilia/blob/master/CITATION.cff).
 
 ## License
-The GPL-v3 license applies to all parts of this repository and is located at the main folder
 
-## History
-- Model was downloaded and published on October 14, 2021
+This package is licensed under a GPL-3.0 license. The model contained within this package is licensed under a MIT license.
+
+Notice: Ersilia grants access to these models 'as is' provided by the original authors, please refer to the original code repository and/or publication if you use the model in your research.
+
+## About Us
+
+The [Ersilia Open Source Initiative](https://ersilia.io) is a Non Profit Organization ([1192266](https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5170657/full-print)) with the mission is to equip labs, universities and clinics in LMIC with AI/ML tools for infectious disease research.
+
+[Help us](https://www.ersilia.io/donate) achieve our mission!
