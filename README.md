@@ -24,6 +24,11 @@ Due to the lack of reliable experimental datapoints, the authors defined the tra
 * [Source Code](https://www.mycpermcheck.aksotriffer.pharmazie.uni-wuerzburg.de/index.html)
 * Ersilia contributor: [miquelduranfrigola](https://github.com/miquelduranfrigola)
 
+## Ersilia model URLs
+* [GitHub](https://github.com/ersilia-os/eos8d8a)
+* [AWS S3](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8d8a.zip)
+* [DockerHub](https://hub.docker.com/r/ersiliaos/eos8d8a) (AMD64)
+
 ## Citation
 
 If you use this model, please cite the [original authors](https://academic.oup.com/bioinformatics/article/29/1/62/272745) of the model and the [Ersilia Model Hub](https://github.com/ersilia-os/ersilia/blob/master/CITATION.cff).
