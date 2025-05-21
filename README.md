@@ -42,7 +42,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `1`
 - **Environment Size (Mb):** `421`
+- **Image Size (Mb):** `547.95`
 
+**Computational Performance (seconds):**
+- 10 inputs: `84.15`
+- 100 inputs: `920.15`
+- 10000 inputs: `-1`
 
 ### References
 - **Source Code**: [https://www.mycpermcheck.aksotriffer.pharmazie.uni-wuerzburg.de/index.html](https://www.mycpermcheck.aksotriffer.pharmazie.uni-wuerzburg.de/index.html)
