@@ -24,6 +24,6 @@ with open(infile_1, "r") as f:
 # final file
 with open(outfile, "w") as f:
     writer = csv.writer(f)
-    writer.writerow(["probability"])
+    writer.writerow(["mycpermcheck_proba"])
     for n in names:
         writer.writerow([values[n]])

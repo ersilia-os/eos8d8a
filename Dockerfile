@@ -1,4 +1,4 @@
-FROM bentoml/model-server:0.11.0-py37
+FROM bentoml/model-server:0.11.0-py38
 MAINTAINER ersilia
 
 RUN conda install -c cyclus java-jre=8.45
