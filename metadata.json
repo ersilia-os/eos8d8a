@@ -40,16 +40,20 @@
     "License": "MIT",
     "Contributor": "miquelduranfrigola",
     "Incorporation Date": "2021-10-14",
+    "Last Packaging Date": "2025-11-24",
     "Release": "v1.0.0",
     "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8d8a.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos8d8a",
-    "Docker Architecture": "AMD64",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ],
     "Model Size": 34.0,
     "Environment Size": 7610.0,
-    "Image Size": 547.95,
-    "Computational Performance 1": 84.15,
-    "Computational Performance 2": 69.83,
-    "Computational Performance 3": 920.15,
-    "Computational Performance 4": -1.0,
-    "Computational Performance 5": -1.0
+    "Image Size": 7557.83,
+    "Computational Performance 1": 36.26,
+    "Computational Performance 2": 26.78,
+    "Computational Performance 3": 29.45,
+    "Computational Performance 4": 109.23,
+    "Computational Performance 5": 471.45
 }
