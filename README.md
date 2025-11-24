@@ -3,8 +3,7 @@
 MycPermCheck predicts potential to permeate the Mycobacterium tuberculosis cell membrane based on physicochemical properties.
 Due to the lack of reliable experimental datapoints, the authors defined the training set using molecules that are active against M.tb (MIC < 10 uM) (therefore, permeable) and have a molecular weight of <500 Dalton, and the negatives using a subsampling of ZINC. we have replicated the authors work using our own decoy sampler (eos3e6s) and LazyQSAR.
 
-This model was incorporated on 2021-10-14.
-
+This model was incorporated on 2021-10-14.Last packaged on 2025-11-24.
 
 ## Information
 ### Identifiers
@@ -37,18 +36,18 @@ Below are the **Output Columns** of the model:
 - **Source:** `Local`
 - **Source Type:** `Replicated`
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos8d8a](https://hub.docker.com/r/ersiliaos/eos8d8a)
-- **Docker Architecture:** `AMD64`
+- **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8d8a.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8d8a.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `34`
 - **Environment Size (Mb):** `7610`
-- **Image Size (Mb):** `547.95`
+- **Image Size (Mb):** `7557.83`
 
 **Computational Performance (seconds):**
-- 10 inputs: `84.15`
-- 100 inputs: `920.15`
-- 10000 inputs: `-1`
+- 10 inputs: `36.26`
+- 100 inputs: `29.45`
+- 10000 inputs: `471.45`
 
 ### References
 - **Source Code**: [https://www.mycpermcheck.aksotriffer.pharmazie.uni-wuerzburg.de/index.html](https://www.mycpermcheck.aksotriffer.pharmazie.uni-wuerzburg.de/index.html)
