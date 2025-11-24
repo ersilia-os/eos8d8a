@@ -1,8 +1,8 @@
-FROM bentoml/model-server:0.11.0-py38
+FROM bentoml/model-server:0.11.0-py312
 MAINTAINER ersilia
 
-RUN conda install -c cyclus java-jre=8.45
-RUN pip install padelpy==0.1.10
+RUN pip install lazyqsar[descriptors]==2.1.1
+
 
 WORKDIR /repo
 COPY . /repo
