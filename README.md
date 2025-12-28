@@ -3,7 +3,7 @@
 MycPermCheck predicts potential to permeate the Mycobacterium tuberculosis cell membrane based on physicochemical properties.
 Due to the lack of reliable experimental datapoints, the authors defined the training set using molecules that are active against M.tb (MIC < 10 uM) (therefore, permeable) and have a molecular weight of <500 Dalton, and the negatives using a subsampling of ZINC. We have replicated the authors work using our own decoy sampler (eos3e6s) and LazyQSAR.
 
-This model was incorporated on 2021-10-14.Last packaged on 2025-11-24.
+This model was incorporated on 2021-10-14.Last packaged on 2025-12-28.
 
 ## Information
 ### Identifiers
@@ -42,12 +42,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `42`
 - **Environment Size (Mb):** `1916`
-- **Image Size (Mb):** `7557.83`
+- **Image Size (Mb):** `2011.3`
 
 **Computational Performance (seconds):**
-- 10 inputs: `36.26`
-- 100 inputs: `29.45`
-- 10000 inputs: `471.45`
+- 10 inputs: `33.51`
+- 100 inputs: `28.16`
+- 10000 inputs: `586.45`
 
 ### References
 - **Source Code**: [https://www.mycpermcheck.aksotriffer.pharmazie.uni-wuerzburg.de/index.html](https://www.mycpermcheck.aksotriffer.pharmazie.uni-wuerzburg.de/index.html)
