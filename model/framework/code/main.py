@@ -8,7 +8,7 @@ input_file = sys.argv[1]
 output_file = sys.argv[2]
 
 root = os.path.dirname(os.path.abspath(__file__))
-model_path = os.path.abspath(os.path.join(root, "..", "..", "checkpoints", "mycpermcheck"))
+model_path = os.path.abspath(os.path.join(root, "..", "..", "checkpoints", "mycpermcheck_bin_v3b_lq2-2"))
 
 with open(input_file, "r") as f:
     reader = csv.reader(f)
