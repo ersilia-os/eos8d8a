@@ -51,7 +51,7 @@ Below are the **Output Columns** of the model:
 
 ### References
 - **Source Code**: [https://www.mycpermcheck.aksotriffer.pharmazie.uni-wuerzburg.de/index.html](https://www.mycpermcheck.aksotriffer.pharmazie.uni-wuerzburg.de/index.html)
-- **Publication**: [https://academic.oup.com/bioinformatics/article/29/1/62/272745](https://academic.oup.com/bioinformatics/article/29/1/62/272745)
+- **Publication**: [https://doi.org/10.1093/bioinformatics/bts641](https://doi.org/10.1093/bioinformatics/bts641)
 - **Publication Type:** `Peer reviewed`
 - **Publication Year:** `2013`
 - **Ersilia Contributor:** [miquelduranfrigola](https://github.com/miquelduranfrigola)
