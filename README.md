@@ -1,6 +1,7 @@
 # Membrane permeability in Mycobacterium tuberculosis
 
-Estimates whether a compound penetrates the Mycobacterium tuberculosis cell envelope, using MycPermCheck. Merget and colleagues derived it from compounds with known intracellular accumulation in mycobacteria, applying principal component analysis to physicochemical properties to build a permeability likelihood rather than a black-box classifier. Being one of the earlier tools for this endpoint, it rests on a small reference set, and permeability alone does not imply antitubercular activity.
+MycPermCheck predicts potential to permeate the Mycobacterium tuberculosis cell membrane based on physicochemical properties.
+Due to the lack of reliable experimental datapoints, the authors defined the training set using molecules that are active against M.tb (MIC < 10 uM) (therefore, permeable) and have a molecular weight of <500 Dalton, and the negatives using a subsampling of ZINC. We have replicated the authors work using our own decoy sampler (eos3e6s) and LazyQSAR.
 
 This model was incorporated on 2021-10-14.Last packaged on 2025-12-28.
 
@@ -23,7 +24,7 @@ This model was incorporated on 2021-10-14.Last packaged on 2025-12-28.
 ### Output
 - **Output Dimension:** `1`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Likelihood that a compound permeates the Mycobacterium tuberculosis cell envelope.
+- **Interpretation:** Probability of permeability across the M.tb cell wall
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
