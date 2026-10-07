@@ -1,6 +1,6 @@
 # Membrane permeability in Mycobacterium tuberculosis
 
-Estimates whether a compound penetrates the Mycobacterium tuberculosis cell envelope, using MycPermCheck. Merget and colleagues derived it from compounds with known intracellular accumulation in mycobacteria, applying principal component analysis to physicochemical properties to build a permeability likelihood rather than a black-box classifier. Being one of the earlier tools for this endpoint, it rests on a small reference set, and permeability alone does not imply antitubercular activity.
+Estimates the probability that a small molecule crosses the Mycobacterium tuberculosis cell envelope, a waxy barrier that blunts otherwise potent inhibitors. Merget and colleagues built the original MycPermCheck by treating 3815 compounds that inhibited mycobacterial growth by 90% at 10 uM and weighed under 500 Da as permeable, against randomly drawn drug-like ZINC molecules as negatives. What is served here is not that tool but an Ersilia replication, a LazyQSAR binary classifier trained with decoys from Ersilia's own sampler. Permeability alone does not imply antitubercular activity.
 
 This model was incorporated on 2021-10-14.Last packaged on 2025-12-28.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2021-10-14.Last packaged on 2025-12-28.
 ### Output
 - **Output Dimension:** `1`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Likelihood that a compound permeates the Mycobacterium tuberculosis cell envelope.
+- **Interpretation:** Probability of crossing the Mycobacterium tuberculosis cell envelope, trained against compounds inhibiting growth by 90% at 10 uM.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
