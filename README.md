@@ -1,6 +1,6 @@
 # Membrane permeability in Mycobacterium tuberculosis
 
-Estimates the probability that a small molecule crosses the Mycobacterium tuberculosis cell envelope, a waxy barrier that blunts otherwise potent inhibitors. Merget and colleagues built the original MycPermCheck by treating 3815 compounds that inhibited mycobacterial growth by 90% at 10 uM and weighed under 500 Da as permeable, against randomly drawn drug-like ZINC molecules as negatives. What is served here is not that tool but an Ersilia replication, a LazyQSAR binary classifier trained with decoys from Ersilia's own sampler. Permeability alone does not imply antitubercular activity.
+Estimates the probability that a small molecule crosses the Mycobacterium tuberculosis cell envelope, a waxy barrier that blunts otherwise potent inhibitors. Merget and colleagues built the original MycPermCheck by treating 3815 compounds that inhibited mycobacterial growth by 90% at 10 uM and weighed under 500 Da as permeable, against randomly drawn drug-like ZINC molecules as negatives. What is served here is not that tool but an Ersilia replication, a LazyQSAR binary classifier trained with decoys from Ersilias own sampler. Permeability alone does not imply antitubercular activity.
 
 This model was incorporated on 2021-10-14.Last packaged on 2025-12-28.
 
@@ -40,7 +40,7 @@ Below are the **Output Columns** of the model:
 
 ### Resource Consumption
 - **Model Size (Mb):** `42`
-- **Environment Size (Mb):** `1916`
+- **Environment Size (Mb):** `1857`
 - **Image Size (Mb):** `2011.3`
 
 **Computational Performance (seconds):**
