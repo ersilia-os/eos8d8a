@@ -2,37 +2,37 @@ Identifier: eos8d8a
 Slug: mycpermcheck
 Status: Ready
 Title: Membrane permeability in Mycobacterium tuberculosis
-Description: Estimates the probability that a small molecule crosses the Mycobacterium
-  tuberculosis cell envelope, a waxy barrier that blunts otherwise potent inhibitors.
-  Merget and colleagues built the original MycPermCheck by treating 3815 compounds
-  that inhibited mycobacterial growth by 90% at 10 uM and weighed under 500 Da as
-  permeable, against randomly drawn drug-like ZINC molecules as negatives. What is
-  served here is not that tool but an Ersilia replication, a LazyQSAR binary classifier
-  trained with decoys from Ersilia's own sampler. Permeability alone does not imply
-  antitubercular activity.
+Description: Estimates the probability that a small molecule crosses the 
+  Mycobacterium tuberculosis cell envelope, a waxy barrier that blunts otherwise
+  potent inhibitors. Merget and colleagues built the original MycPermCheck by 
+  treating 3815 compounds that inhibited mycobacterial growth by 90% at 10 uM 
+  and weighed under 500 Da as permeable, against randomly drawn drug-like ZINC 
+  molecules as negatives. What is served here is not that tool but an Ersilia 
+  replication, a LazyQSAR binary classifier trained with decoys from Ersilias 
+  own sampler. Permeability alone does not imply antitubercular activity.
 Deployment:
-- Local
+  - Local
 Source: Local
 Source Type: Replicated
 Task: Annotation
 Subtask: Activity prediction
 Input:
-- Compound
+  - Compound
 Input Dimension: 1
 Output:
-- Score
+  - Score
 Output Dimension: 1
 Output Consistency: Fixed
-Interpretation: Probability of crossing the Mycobacterium tuberculosis cell envelope,
-  trained against compounds inhibiting growth by 90% at 10 uM.
+Interpretation: Probability of crossing the Mycobacterium tuberculosis cell 
+  envelope, trained against compounds inhibiting growth by 90% at 10 uM.
 Tag:
-- Permeability
-- ADME
-- Antimicrobial activity
+  - Permeability
+  - ADME
+  - Antimicrobial activity
 Biomedical Area:
-- Tuberculosis
+  - Tuberculosis
 Target Organism:
-- Mycobacterium tuberculosis
+  - Mycobacterium tuberculosis
 Publication Type: Peer reviewed
 Publication Year: 2013
 Publication: https://doi.org/10.1093/bioinformatics/bts641
@@ -45,8 +45,8 @@ Release: v2.0.0
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8d8a.zip
 DockerHub: https://hub.docker.com/r/ersiliaos/eos8d8a
 Docker Architecture:
-- AMD64
-- ARM64
+  - AMD64
+  - ARM64
 Model Size: 42.0
 Environment Size: 1916.0
 Image Size: 2011.3
