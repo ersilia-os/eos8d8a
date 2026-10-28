@@ -1,0 +1,7 @@
+python: "3.12"
+commands:
+    - ["pip", "lazyqsar[descriptors]", "2.2.0"]
+    - ["pip", "torch", "2.8.0+cpu", "--extra-index-url", "https://download.pytorch.org/whl/cpu"]
+    - ["pip", "chemprop", "2.2.1"]
+    - ["pip", "rdkit", "2025.9.1"]
+    - ["lazyqsar-setup"]
