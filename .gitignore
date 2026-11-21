@@ -128,3 +128,9 @@ dmypy.json
 # Pyre type checker
 .pyre/
 /data.h5
+
+# eosvc local bookkeeping (access policy lock)
+.eosvc/
+
+#eosvc managed
+model/framework/fit/*

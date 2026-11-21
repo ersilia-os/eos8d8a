@@ -1,2 +1,2 @@
 name,type,direction,description
-mycpermcheck,float,high,Probability of permeability in Mtb
+mycpermcheck_rank,float,high,"Rank score of the compound's predicted permeability into Mycobacterium tuberculosis, calibrated against a reference library of 50K drug-like molecules so that 0.65 is more likely permeable than 99% of them. Recommended threshold: 0.65."
