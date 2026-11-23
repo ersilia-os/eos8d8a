@@ -1,6 +1,6 @@
 # Membrane permeability in Mycobacterium tuberculosis
 
-Estimates the probability that a small molecule crosses the Mycobacterium tuberculosis cell envelope, a waxy barrier that blunts otherwise potent inhibitors. Merget and colleagues built the original MycPermCheck by treating 3815 compounds that inhibited mycobacterial growth by 90% at 10 uM and weighed under 500 Da as permeable, against randomly drawn drug-like ZINC molecules as negatives. What is served here is not that tool but an Ersilia replication, a LazyQSAR binary classifier trained with decoys from Ersilias own sampler. Permeability alone does not imply antitubercular activity.
+Estimates the probability that a small molecule crosses the Mycobacterium tuberculosis cell envelope, a waxy barrier that blunts otherwise potent inhibitors. This Ersilia replication of MycPermCheck (Merget and colleagues) is a LazyQSAR classifier trained on 3,910 compounds that inhibit mycobacterial growth against 39,100 decoys from the NIH MLSMR library, with AUROC 0.95 in five-fold out-of-fold validation. Decoys are easier to separate than measured non-permeable compounds, so real performance is lower. Permeability alone does not imply antitubercular activity.
 
 This model was incorporated on 2021-10-14.
 Last packaged on 2026-10-28.
@@ -24,12 +24,12 @@ Last packaged on 2026-10-28.
 ### Output
 - **Output Dimension:** `1`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probability of crossing the Mycobacterium tuberculosis cell envelope, trained against compounds inhibiting growth by 90% at 10 uM.
+- **Interpretation:** Rank of predicted permeability into Mycobacterium tuberculosis against 50,000 drug-like molecules; 0.65 is more likely permeable than 99% of them.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
 |------|------|-----------|-------------|
-| mycpermcheck | float | high | Probability of permeability in Mtb |
+| mycpermcheck_rank | float | high | Rank score of the compound's predicted permeability into Mycobacterium tuberculosis, calibrated against a reference library of 50K drug-like molecules so that 0.65 is more likely permeable than 99% of them. Recommended threshold: 0.65. |
 
 
 ### Source and Deployment
