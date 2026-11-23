@@ -38,7 +38,7 @@ Below are the **Output Columns** of the model:
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos8d8a](https://hub.docker.com/r/ersiliaos/eos8d8a)
 - **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8d8a.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8d8a.zip)
-- **Apptainer**: [https://models-sif.s3.eu-north-1.amazonaws.com/eos8d8a_v2.sif](https://models-sif.s3.eu-north-1.amazonaws.com/eos8d8a_v2.sif)
+- **Apptainer**: [https://models-sif.s3.eu-north-1.amazonaws.com/eos8d8a_v3.sif](https://models-sif.s3.eu-north-1.amazonaws.com/eos8d8a_v3.sif)
 
 ### Resource Consumption
 - **Model Size (Mb):** `115`
