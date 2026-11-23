@@ -48,7 +48,7 @@ DockerHub: https://hub.docker.com/r/ersiliaos/eos8d8a
 Docker Architecture:
   - AMD64
   - ARM64
-Apptainer: https://models-sif.s3.eu-north-1.amazonaws.com/eos8d8a_v2.sif
+Apptainer: https://models-sif.s3.eu-north-1.amazonaws.com/eos8d8a_v3.sif
 Model Size: 115.0
 Environment Size: 6954.0
 Image Size: 3299.95
