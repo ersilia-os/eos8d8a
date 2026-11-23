@@ -41,7 +41,7 @@ Source Code: https://github.com/ersilia-os/lazy-qsar
 License: MIT
 Contributor: miquelduranfrigola
 Incorporation Date: '2021-10-14'
-Last Packaging Date: '2026-10-28'
+Last Packaging Date: '2026-11-23'
 Release: v2.1.1
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8d8a.zip
 DockerHub: https://hub.docker.com/r/ersiliaos/eos8d8a
@@ -51,9 +51,9 @@ Docker Architecture:
 Apptainer: https://models-sif.s3.eu-north-1.amazonaws.com/eos8d8a_v2.sif
 Model Size: 115.0
 Environment Size: 6954.0
-Image Size: 1993.07
-Computational Performance 1: 35.67
-Computational Performance 2: 25.89
-Computational Performance 3: 31.6
-Computational Performance 4: 148.08
-Computational Performance 5: 675.45
+Image Size: 3299.95
+Computational Performance 1: 33.63
+Computational Performance 2: 23.24
+Computational Performance 3: 24.52
+Computational Performance 4: 39.89
+Computational Performance 5: 105.12
