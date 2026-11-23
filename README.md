@@ -3,7 +3,7 @@
 Estimates the probability that a small molecule crosses the Mycobacterium tuberculosis cell envelope, a waxy barrier that blunts otherwise potent inhibitors. This Ersilia replication of MycPermCheck (Merget and colleagues) is a LazyQSAR classifier trained on 3,910 compounds that inhibit mycobacterial growth against 39,100 decoys from the NIH MLSMR library, with AUROC 0.95 in five-fold out-of-fold validation. Decoys are easier to separate than measured non-permeable compounds, so real performance is lower. Permeability alone does not imply antitubercular activity.
 
 This model was incorporated on 2021-10-14.
-Last packaged on 2026-10-28.
+Last packaged on 2026-11-23.
 
 ## Information
 ### Identifiers
@@ -43,12 +43,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `115`
 - **Environment Size (Mb):** `6954`
-- **Image Size (Mb):** `1993.07`
+- **Image Size (Mb):** `3299.95`
 
 **Computational Performance (seconds):**
-- 10 inputs: `35.67`
-- 100 inputs: `31.6`
-- 10000 inputs: `675.45`
+- 10 inputs: `33.63`
+- 100 inputs: `24.52`
+- 10000 inputs: `105.12`
 
 ### References
 - **Source Code**: [https://github.com/ersilia-os/lazy-qsar](https://github.com/ersilia-os/lazy-qsar)
