@@ -2,14 +2,14 @@ Identifier: eos8d8a
 Slug: mycpermcheck
 Status: Ready
 Title: Membrane permeability in Mycobacterium tuberculosis
-Description: Estimates the probability that a small molecule crosses the Mycobacterium
-  tuberculosis cell envelope, a waxy barrier that blunts otherwise potent
-  inhibitors. This Ersilia replication of MycPermCheck (Merget and colleagues)
-  is a LazyQSAR classifier trained on 3,910 compounds that inhibit mycobacterial
-  growth against 39,100 decoys from the NIH MLSMR library, with AUROC 0.95 in
-  five-fold out-of-fold validation. Decoys are easier to separate than measured
-  non-permeable compounds, so real performance is lower. Permeability alone does
-  not imply antitubercular activity.
+Description: Estimates the probability that a small molecule crosses the 
+  Mycobacterium tuberculosis cell envelope, a waxy barrier that blunts otherwise
+  potent inhibitors. This Ersilia replication of MycPermCheck (Merget and 
+  colleagues) is a LazyQSAR classifier trained on 3,910 compounds that inhibit 
+  mycobacterial growth against 39,100 decoys from the NIH MLSMR library, with 
+  AUROC 0.95 in five-fold out-of-fold validation. Decoys are easier to separate 
+  than measured non-permeable compounds, so real performance is lower. 
+  Permeability alone does not imply antitubercular activity.
 Deployment:
   - Local
 Source: Local
@@ -23,8 +23,9 @@ Output:
   - Score
 Output Dimension: 1
 Output Consistency: Fixed
-Interpretation: Rank of predicted permeability into Mycobacterium tuberculosis against 50,000
-  drug-like molecules; 0.65 is more likely permeable than 99% of them.
+Interpretation: Rank of predicted permeability into Mycobacterium tuberculosis 
+  against 50,000 drug-like molecules; 0.65 is more likely permeable than 99% of 
+  them.
 Tag:
   - Permeability
   - ADME
